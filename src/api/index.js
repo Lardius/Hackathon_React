@@ -1,5 +1,5 @@
-import users from "./fake.api/user.api";
+import persons from './fake.api/persons.api'
 const API = {
-    users
-};
-export default API;
+  persons
+}
+export default API
