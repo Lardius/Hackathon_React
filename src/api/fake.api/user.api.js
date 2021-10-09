@@ -12,7 +12,7 @@ const users = [
         bookmark: false
     },
     {
-        _id: "67rdca3eeb7f6fgeed471815",
+        _id: "67rdca3eeb7f6fgeed471816",
         firstName: "Владимир ",
         lastName: "Гринько",
         age: 32,
@@ -24,7 +24,7 @@ const users = [
         bookmark: false
     },
     {
-        _id: "67rdca3eeb7f6fgeed471815",
+        _id: "67rdca3eeb7f6fgeed471817",
         firstName: "Владислав ",
         lastName: "Муравьев",
         age: 38,
@@ -32,6 +32,18 @@ const users = [
         image: "",
         social: { linkedIn: "https://www.linkedin.com/in/vladislav-muravyov/", VK: "https://vk.com/vmuravyov" },
         language: { HTML: "90%", CSS: "80%", JavaScript: "70%", ReactJS: "60%" },
+        teamLeader: false,
+        bookmark: false
+    },
+    {
+        _id: "67rdca3eeb7f6fgeed471818",
+        firstName: "Евгений",
+        lastName: "",
+        age: "",
+        personInfo: "",
+        image: "",
+        social: { VK: "" },
+        language: { HTML: " %", CSS: " %", JavaScript: " %", ReactJS: " %" },
         teamLeader: false,
         bookmark: false
     }
