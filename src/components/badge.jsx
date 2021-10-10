@@ -2,8 +2,10 @@ import React from 'react'
 import Proptypes from 'prop-types'
 
 const Badge = ({ color, context, status }) => {
+  let classNames = "m-1 badge bg-";
+  classNames += color;
   return (
-    <span className={'badge badge-' + (color)}>
+    <span className={classNames}>
       {context}
       {status && (<i className='bi bi-check-square-fill'></i>)}
     </span>

@@ -9,3 +9,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.image,
+.card-img-top {
+  max-height: 200px;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
