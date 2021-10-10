@@ -40,7 +40,8 @@ const persons = [
       { _id: 4, value: skillsConfig.react, level: 40 }
     ],
     teamLeader: true,
-    bookmark: false
+    bookmark: false,
+    color: 'primary' 
   },
   {
     _id: '67rdca3eeb7f6fgeed471816',
@@ -49,7 +50,7 @@ const persons = [
     age: 32,
     personInfo:
       'Проживаю в городе Санкт-Петербург.2 высших образования. Первое по специальности Инженер,  второе по специальности Экономика и управление на предприятии. На данный момент работаю на Концерне Воздушно-Космической Обороны наладчиком станков с программным управлением и прохожу курс JavaScript Junior Frontend Developer, после успешного прохождения которого настроен работать в IT сфере.',
-    image: '',
+    image: 'https://cropas.by/wp-content/uploads/2015/09/js.png',
     social: {
       linkedIn:
         'Соц.сети: https://www.linkedin.com/mwlite/in/%D0%B2%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80-%D0%B3%D1%80%D0%B8%D0%BD%D1%8C%D0%BA%D0%BE-b5834b20a'
@@ -61,7 +62,8 @@ const persons = [
       { _id: 4, value: skillsConfig.react, level: 15 }
     ],
     teamLeader: false,
-    bookmark: true
+    bookmark: true,
+    color: 'success'
   },
   {
     _id: '67rdca3eeb7f6fgeed471817',
@@ -82,7 +84,8 @@ const persons = [
       { _id: 4, value: skillsConfig.react, level: 60 }
     ],
     teamLeader: false,
-    bookmark: false
+    bookmark: false,
+    color: 'secondary'
   },
   {
     _id: '67rdca3eeb7f6fgeed471818',
@@ -99,7 +102,8 @@ const persons = [
       { _id: 4, value: skillsConfig.react, level: 40 }
     ],
     teamLeader: false,
-    bookmark: false
+    bookmark: false,
+    color: 'danger'
   }
 ]
 
