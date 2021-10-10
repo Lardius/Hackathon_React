@@ -13,17 +13,31 @@ const App = () => {
   }, [])
 
   console.log(persons)
-  return <div>
-    <NavBar/>
-    <Switch>
-      <Route path="/" exact render={ (props) => {
-        return (persons && <MainPage persons={persons} {...props} />)
-      } } />
-      <Route path="/Bookmark" render={ (props) => {
-        return (<Bookmark persons={persons && persons.filter((person) => person.bookmark === true)} {...props} />)
-      } } />
-    </Switch>
-  </div>
+  return (
+    <div>
+      <NavBar />
+      <Switch>
+        <Route
+          path="/"
+          exact
+          render={(props) => {
+            return persons && <MainPage persons={persons} {...props} />
+          }}
+        />
+        <Route
+          path="/Bookmark"
+          render={(props) => {
+            return (
+              <Bookmark
+                persons={persons && persons.filter((person) => person.bookmark === true)}
+                {...props}
+              />
+            )
+          }}
+        />
+      </Switch>
+    </div>
+  )
 }
 
 export default App
