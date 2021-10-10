@@ -15,7 +15,7 @@ const ProgressBar = ({ name, percent, color, image }) => {
         })}>
         <img style={{ width: 50, height: 50, objectFit: 'contain' }} src={image} alt={name} />
         <div style={{ fontSize: '18px', marginTop: 5 }}>
-          <strong>{`${percent}% ${name}`}</strong>
+          <strong style={{ color: `${color}` }}>{`${percent}% ${name}`}</strong>
         </div>
       </CircularProgressbarWithChildren>
     </div>
