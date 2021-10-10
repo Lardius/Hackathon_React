@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const PersonCard = ({ person, onBookmark }) => {
     return (
-        <div className="card col-3 me-2" style={{ width: "18rem" }}>
+        <div className="card col-3 me-2" style={{ width: "18rem"}}>
             <img
                 src={person.image}
                 className="card-img-top"
@@ -17,7 +17,7 @@ const PersonCard = ({ person, onBookmark }) => {
             </div>
             <div className="card-body d-flex justify-content-around">
               <Link to={"/person/" + person._id} className="btn btn-primary">Подробнее</Link>
-              <Button color={person.bookmark ? "secondary" : "primary"} nameButt={"Избранное"} clickAction={() => onBookmark(person._id)}/>
+              <Button color={person.bookmark ? "success" : "secondary"} nameButt={"Избранное"} clickAction={() => onBookmark(person._id)}/>
             </div>
         </div>
     );

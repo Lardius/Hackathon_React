@@ -8,13 +8,13 @@ const NavBar = () => {
     <ul className="nav">
       <li className="nav-item">
         <Link className="nav-link active" aria-current="page" to="/">
-          <Badge context="Главная" color='info' />
+          <h2><Badge context="Главная" color='info' /></h2>
 
         </Link>
       </li>
       <li className="nav-item">
         <Link className="nav-link" to="/Bookmark">
-          <Badge context="Избранные" color='info' />
+          <h2><Badge context="Избранные" color='info' /></h2>
         </Link>
       </li>
     </ul>
