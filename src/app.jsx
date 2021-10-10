@@ -22,15 +22,27 @@ const App = () => {
         api.persons.fetchAll().then((data) => setPersons(data));
     }, []);
 
+    const handleBookmark = (id) => {
+        setPersons(
+            persons.filter((person) => {
+                if (person._id === id) {
+                    person.bookmark = !person.bookmark;
+                    return person;
+                }
+                return person;
+            })
+        );
+    };
+
     return (
         <div className="container mt-3">
             <NavBar />
             <Switch>
                 <Route path="/" exact render={(props) => {
-                    return (persons && <MainPage persons={persons} {...props} />);
+                    return (persons && <MainPage persons={persons} onBookmark={handleBookmark} {...props} />);
                 }} />
                 <Route path="/person/:personId?" exact render={(props) => {
-                    return (persons && <PersonPage {...props} />);
+                    return (persons && <PersonPage onBookmark={handleBookmark} {...props} />);
                 }} />
                 <Route path="/Bookmark" render={(props) => {
                     return (<Bookmark persons={persons && persons.filter((person) => person.bookmark === true)} {...props} />);
