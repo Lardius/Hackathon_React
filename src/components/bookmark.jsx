@@ -1,12 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import ProgressList from './progressList'
 
 const Bookmark = ({ persons }) => {
   console.log(persons)
   return (
-    <div>
-      <h1>Bookmark</h1>
-    </div>
+    <ProgressList skills={persons[0].skills}/>
   )
 }
 Bookmark.propTypes = { persons: PropTypes.array.isRequired }
