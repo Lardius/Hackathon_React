@@ -1,4 +1,4 @@
-import persons from "./fake.api/persons.api";
+import persons from './fake.api/persons.api'
 
 const API = {
     persons
