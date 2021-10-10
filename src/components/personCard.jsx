@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Badge from "./badge";
+import Button from "./button";
+import { Link } from "react-router-dom";
 
 const PersonCard = ({ person, onBookmark }) => {
     return (
@@ -13,9 +15,9 @@ const PersonCard = ({ person, onBookmark }) => {
             <div className="card-body">
                 <Badge context={person.firstName + person.lastName} color={person.color} status={person.teamLeader}/>
             </div>
-            <div className="card-body">
-                <a href={"/person/" + person._id} className="card-link">Подробнее</a>
-                <a href="#" onClick={() => onBookmark(person._id)} className="card-link">Избранное</a>
+            <div className="card-body d-flex justify-content-around">
+              <Link to={"/person/" + person._id} className="btn btn-primary">Подробнее</Link>
+              <Button color={person.bookmark ? "secondary" : "primary"} nameButt={"Избранное"} clickAction={() => onBookmark(person._id)}/>
             </div>
         </div>
     );

@@ -39,7 +39,7 @@ const App = () => {
           return (persons && <MainPage persons={persons} onBookmark={handleBookmark} {...props} />);
         }} />
         <Route path="/person/:personId?" exact render={(props) => {
-          return (persons && <PersonPage  {...props} />);
+          return (persons && <PersonPage onBookmark={handleBookmark} {...props} />);
         }} />
         <Route path="/Bookmark" render={(props) => {
           return (persons && <Bookmark persons={persons.filter((person) => person.bookmark === true)} onBookmark={handleBookmark} {...props} />);
