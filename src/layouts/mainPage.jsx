@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 
 import PersonCard from "../components/personCard";
 
-const MainPage = (props) => {
+const MainPage = ({ persons, ...rest }) => {
     return (
         <div style={{ display: "flex" }}>
-            {props.persons.map(person => (
-                <PersonCard person={person} key={person._id} onBookmark={handleBookmark} />
+            {persons.map(person => (
+                <PersonCard person={person} key={person._id} {...rest} />
             ))}
         </div>
     );
