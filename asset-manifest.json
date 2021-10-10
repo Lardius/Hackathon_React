@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Hackathon_React/static/css/main.76ff8ae4.chunk.css",
+    "main.js": "/Hackathon_React/static/js/main.4b534531.chunk.js",
+    "main.js.map": "/Hackathon_React/static/js/main.4b534531.chunk.js.map",
+    "runtime-main.js": "/Hackathon_React/static/js/runtime-main.c88a8f8b.js",
+    "runtime-main.js.map": "/Hackathon_React/static/js/runtime-main.c88a8f8b.js.map",
+    "static/css/2.e2c255d6.chunk.css": "/Hackathon_React/static/css/2.e2c255d6.chunk.css",
+    "static/js/2.1e6f9dcc.chunk.js": "/Hackathon_React/static/js/2.1e6f9dcc.chunk.js",
+    "static/js/2.1e6f9dcc.chunk.js.map": "/Hackathon_React/static/js/2.1e6f9dcc.chunk.js.map",
+    "index.html": "/Hackathon_React/index.html",
+    "static/css/2.e2c255d6.chunk.css.map": "/Hackathon_React/static/css/2.e2c255d6.chunk.css.map",
+    "static/css/main.76ff8ae4.chunk.css.map": "/Hackathon_React/static/css/main.76ff8ae4.chunk.css.map",
+    "static/js/2.1e6f9dcc.chunk.js.LICENSE.txt": "/Hackathon_React/static/js/2.1e6f9dcc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c88a8f8b.js",
+    "static/css/2.e2c255d6.chunk.css",
+    "static/js/2.1e6f9dcc.chunk.js",
+    "static/css/main.76ff8ae4.chunk.css",
+    "static/js/main.4b534531.chunk.js"
+  ]
+}
